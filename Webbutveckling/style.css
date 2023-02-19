@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+    background-color:black;
+    background: url("/bilder/bakgrund.jpg");
+    background-size: auto;
+    text-decoration-color: #006494 ;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+}
+.lista {
+    font-size: 20px;
+    color: darkgreen;
+    text-align: center;
+    list-style-position: inside;
+}
+nav a {
+    text-decoration: none;
+    display:inline-block;
+    padding: 25px;
+    width: 200px;
+    margin: 10px;
+    background-color:rgb(47, 54, 60);
+    color: rgb(63, 94, 124);
+}
+
+nav a:hover {
+    background-color: aliceblue;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.login{
+    border: 2px solid orange;
+    padding: 30px;
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.login label{
+    text-align: center;
+}
+
+img{
+
+}
+
+#InstaBild {
+    margin-right: 5%;
+    margin-bottom:5%;
+    float: right;
+}
+
+#Bild1 {
+    position: center;
+}
+
+#Bild2{
+    position: center;
+}
+#Bild3{
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+#Bild4{
+    position: unset;
+}
+#Bild5{
+position: center;
+
+}
+
+#Bild6{
+    position: center;
+}
+#Bild7{
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+#Bild8 {
+    position: absolute;
+    right: 400px;
+    font-size: larger;
+    transform: translate(30px, 20px) rotate(20deg);
+    margin-top: 100px;
+    width: 300px;
+    height: 150px;
+}
+
+#Sanjaaaa {
+    float: right;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+
+}
+p{
+    display:inline;
+}
+
+table th, td {
+    border: 1px solid black;
+}
+
+video{
+    position: absolute;
+    left: 150px;
+}

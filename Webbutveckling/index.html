@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanja Borisavjevic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+
+
+<div class="login">
+<form>
+    <label for = "username">Username or email:</label><br>
+    <input id ="username" type = "text"><br>
+    <label for = "password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="button" onclick="Kollalösenord()"> Logon</button>
+
+</form>
+
+</div>
+<script>
+    function Kollalösenord(){
+        const password = document.getElementById("password").value;
+        const hasUpperCase = /[A-Z]/.test(password);
+        const hasLowerCase = /[a-z]/.test(password);
+        const hasDigit = /\d/.test(password);
+        if (password.length >= 8 && hasUpperCase && hasLowerCase && hasDigit) {
+            window.location.href = "second.html";
+        }
+            else{
+                alert("Error")
+            }
+        }
+</script>
+
+<footer>
+    <p>Utvecklare<br>
+        <a href="mailto: borisavljevic.sanja01@gmail.com">sb224mt@student.lnu.se</a></p>
+
+    <a href="https://www.instagram.com/sanjaaaab/">
+        <img src="bilder/insta.svg"  width="50" height="50" alt="Insta">
+    </a>
+</footer>
+
+
+</body>
+</html>
